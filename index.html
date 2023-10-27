@@ -10,28 +10,28 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather app</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="Weather-app">
-          <h1>Tehran</h1>
+          <h1 id="city">Tehran</h1>
           <ul>
-            <li>friday</li>
-            <li>clear</li>
+            <li id="date">friday</li>
+            <li id="description">clear</li>
           </ul>
           <div class="row">
             <div class="col-6">
               <img src="src/sun-icon.png" alt="sun" width="80" />
 
-              <span class="temp"> 19°C|<a href="#">°F</a></span>
+              <span id="temperature"> </span>°C|<a href="#">°F</a>
             </div>
             <div class="col-6">
               <ul>
-                <li>humidity</li>
-                <li>wind</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
           </div>
