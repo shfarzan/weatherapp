@@ -34,3 +34,8 @@ span {
   font-size: 30px;
   color: rgb(27, 27, 102);
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
